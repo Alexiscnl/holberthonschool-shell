@@ -1,0 +1,2 @@
+#!/bin/bash
+rkdir /tmp/my_first_directory
