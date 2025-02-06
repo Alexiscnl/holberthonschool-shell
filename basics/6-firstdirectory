@@ -1,2 +1,2 @@
 #!/bin/bash
-rkdir my_first_directory /tmp
+rkdir -p my_first_directory /tmp
