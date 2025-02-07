@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x 10-mirror_permissions
+chmod -x 10-mirror_permissions
