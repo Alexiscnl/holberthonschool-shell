@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello $(whaomi)"
+echo '''hello MyUser'''
