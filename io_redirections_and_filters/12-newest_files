@@ -1,2 +1,2 @@
 #!/bin/bash
-find -newerct | head 
+ls -t | head
