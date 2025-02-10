@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type d -maxdepht 1 |wc -l
