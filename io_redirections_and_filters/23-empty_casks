@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | ls -1 | cut -d " " -f 11 | sort
+find . -empty | ls -1 | sort
