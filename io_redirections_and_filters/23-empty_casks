@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -empty | ls -la | cut -d " " -f 11 | sort
