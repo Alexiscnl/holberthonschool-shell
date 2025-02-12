@@ -1,167 +1,63 @@
-Shell, I/O Redirection, and Special Characters
-Description
-Ce projet porte sur l'utilisation des redirections d'entrée/sortie en Shell, ainsi que la manipulation des fichiers et des flux. Vous allez créer des scripts qui interagissent avec le système de fichiers, manipulent des textes et gèrent les flux d'entrée et de sortie de manière efficace. L'accent est mis sur l'utilisation des commandes standards et des caractères spéciaux dans le Shell pour accomplir des tâches complexes.
+<div align="center"><img src="https://github.com/ksyv/holbertonschool-web_front_end/blob/main/baniere_holberton.png"></div>
 
-Objectifs
-À la fin de ce projet, vous serez capable de :
+# Shell, I/O Redirection and Special Characters
 
-Expliquer ce qu'est la redirection Shell et comment elle fonctionne.
-Expliquer ce que font les commandes telles que head, tail, find, wc, sort, uniq, grep, tr.
-Rediriger la sortie standard vers un fichier.
-Lire l'entrée standard depuis un fichier au lieu du clavier.
-Enchaîner les sorties de plusieurs programmes à l'aide de redirections et de tuyaux (pipes).
-Utiliser des caractères spéciaux comme les espaces, les guillemets simples et doubles, le backslash, les commentaires, les tuyaux, les séparateurs de commande, et le tilde.
-Lire et comprendre les fichiers /etc/passwd et /etc/shadow.
-Pré-requis
-Vous devez utiliser des éditeurs comme vi, vim, ou emacs.
-Vous devez créer des scripts qui seront testés sur Ubuntu 20.04 LTS.
-Chaque script doit avoir exactement deux lignes de code.
-Tous les fichiers doivent être exécutables.
-Tâches
-1. Manipulation de l'entrée et de la sortie
-Les scripts doivent effectuer des redirections d'entrée/sortie dans différents scénarios :
+## Resources <a name="Resources"></a>
 
-Rediriger la sortie standard d'une commande vers un fichier.
-Lire l'entrée d'un fichier au lieu du clavier.
-Combiner plusieurs commandes à l'aide de redirections et de tuyaux.
-2. Utilisation des commandes de filtrage
-Vous allez manipuler plusieurs commandes pour filtrer les données en entrée et en sortie :
+* [Shell, I/O Redirection](https://linuxcommand.org/lc3_lts0070.php)
+* [Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)
+  
+* man or help:
+    * `echo`
+    * `cat`
+    * `head`
+    * `tail`
+    * `find`
+    * `wc`
+    * `sort`
+    * `uniq`
+    * `grep`
+    * `tr`
+    * `rev`
+    * `cut`
+    * `passwd (5)`
 
-head : Afficher les premières lignes d'un fichier.
-tail : Afficher les dernières lignes d'un fichier.
-find : Chercher des fichiers dans un répertoire.
-wc : Compter les lignes, les mots et les caractères dans un fichier.
-sort : Trier les lignes d'un fichier.
-uniq : Supprimer les doublons dans un fichier.
-grep : Filtrer les lignes contenant un motif.
-tr : Modifier des caractères dans un flux de texte.
-3. Caractères spéciaux et leur utilisation
-Vous devez maîtriser l'utilisation des caractères spéciaux dans le Shell :
+## Learning Objectives <a name="Learning-Objectives"></a>
 
-Espaces : Séparer les arguments dans les commandes.
-Guillemets simples et doubles : Pour délimiter des chaînes de caractères.
-Backslash (\) : Échapper des caractères spéciaux.
-Commentaires : Ajouter des commentaires dans les scripts.
-Pipe (|) : Chainer plusieurs commandes.
-Séparateur de commandes (;) : Exécuter plusieurs commandes dans une seule ligne.
-Tilde (~) : Référencer le répertoire personnel.
-4. Comprendre /etc/passwd et /etc/shadow
-Vous devez être capables de lire et de comprendre les formats des fichiers système /etc/passwd et /etc/shadow :
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-Le fichier /etc/passwd contient des informations sur les comptes utilisateurs.
-Le fichier /etc/shadow contient des informations sensibles sur les mots de passe des utilisateurs.
-Exemples de Scripts
-1. Afficher les 10 premières lignes d'un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-head -n 10 fichier.txt
-2. Afficher les 10 dernières lignes d'un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-tail -n 10 fichier.txt
-3. Compter le nombre de mots dans un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-wc -w fichier.txt
-4. Rechercher un motif dans un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-grep "motif" fichier.txt
-Règles Générales
-Scripts à 2 lignes : Chaque script doit être exactement de 2 lignes (vous pouvez utiliser une commande sur la première ligne et une autre sur la deuxième).
-Fin des scripts avec une nouvelle ligne : Assurez-vous que chaque fichier se termine par une nouvelle ligne (cela est requis par le standard).
-Pas de backticks, &&, || ou ; : Ces éléments ne sont pas autorisés dans les scripts.
-Pas d'utilisation de sed ou awk : Ces outils ne sont pas autorisés dans ce projet.
-Tests
-Les scripts seront testés sur Ubuntu 20.04 LTS, en vérifiant leur fonctionnalité par rapport aux exigences. Vous devrez utiliser les commandes de manière créative pour remplir les objectifs sans dépasser la limite de deux lignes de code.Shell, I/O Redirection, and Special Characters
-Description
-Ce projet porte sur l'utilisation des redirections d'entrée/sortie en Shell, ainsi que la manipulation des fichiers et des flux. Vous allez créer des scripts qui interagissent avec le système de fichiers, manipulent des textes et gèrent les flux d'entrée et de sortie de manière efficace. L'accent est mis sur l'utilisation des commandes standards et des caractères spéciaux dans le Shell pour accomplir des tâches complexes.
+* **Shell, I/O Redirection**
+    * What do the commands `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr` do
+    * How to redirect standard output to a file
+    * How to get standard input from a file instead of the keyboard
+    * How to send the output from one program to the input of another program
+    * How to combine commands and filters with redirections
+* **Special Characters**
+    * What are special characters
+    * Understand what do the white spaces, single quotes, double quotes, backslash, comment, pipe, command separator, tilde and how and when to use them
+* **Other Man Pages**
+    * How to display a line of text
+    * How to concatenate files and print on the standard output
+    * How to reverse a string
+    * How to remove sections from each line of files
+    * What is the `/etc/passwd` file and what is its format
+    * What is the `/etc/shadow` file and what is its format
 
-Objectifs
-À la fin de ce projet, vous serez capable de :
+## Requirements <a name="Requirements"></a>
 
-Expliquer ce qu'est la redirection Shell et comment elle fonctionne.
-Expliquer ce que font les commandes telles que head, tail, find, wc, sort, uniq, grep, tr.
-Rediriger la sortie standard vers un fichier.
-Lire l'entrée standard depuis un fichier au lieu du clavier.
-Enchaîner les sorties de plusieurs programmes à l'aide de redirections et de tuyaux (pipes).
-Utiliser des caractères spéciaux comme les espaces, les guillemets simples et doubles, le backslash, les commentaires, les tuyaux, les séparateurs de commande, et le tilde.
-Lire et comprendre les fichiers /etc/passwd et /etc/shadow.
-Pré-requis
-Vous devez utiliser des éditeurs comme vi, vim, ou emacs.
-Vous devez créer des scripts qui seront testés sur Ubuntu 20.04 LTS.
-Chaque script doit avoir exactement deux lignes de code.
-Tous les fichiers doivent être exécutables.
-Tâches
-1. Manipulation de l'entrée et de la sortie
-Les scripts doivent effectuer des redirections d'entrée/sortie dans différents scénarios :
+* **General**
+    * Allowed editors: `vi`, `vim`, `emacs`
+    * All your scripts will be tested on Ubuntu 20.04 LTS
+    * All your scripts should be exactly two lines long (`$ wc -l file` should print 2)
+    * All your files should end with a new line (why?)
+    * The first line of all your files should be exactly `#!/bin/bash`
+    * A `README.md` file, at the root of the folder of the project, describing what each script is doing
+    * You are not allowed to use backticks, `&&`, `||` or `;`
+    * All your files must be executable
+    * You are not allowed to use `sed` or `awk`
 
-Rediriger la sortie standard d'une commande vers un fichier.
-Lire l'entrée d'un fichier au lieu du clavier.
-Combiner plusieurs commandes à l'aide de redirections et de tuyaux.
-2. Utilisation des commandes de filtrage
-Vous allez manipuler plusieurs commandes pour filtrer les données en entrée et en sortie :
+## More Info <a name="More-Info"></a>
 
-head : Afficher les premières lignes d'un fichier.
-tail : Afficher les dernières lignes d'un fichier.
-find : Chercher des fichiers dans un répertoire.
-wc : Compter les lignes, les mots et les caractères dans un fichier.
-sort : Trier les lignes d'un fichier.
-uniq : Supprimer les doublons dans un fichier.
-grep : Filtrer les lignes contenant un motif.
-tr : Modifier des caractères dans un flux de texte.
-3. Caractères spéciaux et leur utilisation
-Vous devez maîtriser l'utilisation des caractères spéciaux dans le Shell :
+Read your `/etc/passwd` and `/etc/shadow` files.
 
-Espaces : Séparer les arguments dans les commandes.
-Guillemets simples et doubles : Pour délimiter des chaînes de caractères.
-Backslash (\) : Échapper des caractères spéciaux.
-Commentaires : Ajouter des commentaires dans les scripts.
-Pipe (|) : Chainer plusieurs commandes.
-Séparateur de commandes (;) : Exécuter plusieurs commandes dans une seule ligne.
-Tilde (~) : Référencer le répertoire personnel.
-4. Comprendre /etc/passwd et /etc/shadow
-Vous devez être capables de lire et de comprendre les formats des fichiers système /etc/passwd et /etc/shadow :
-
-Le fichier /etc/passwd contient des informations sur les comptes utilisateurs.
-Le fichier /etc/shadow contient des informations sensibles sur les mots de passe des utilisateurs.
-Exemples de Scripts
-1. Afficher les 10 premières lignes d'un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-head -n 10 fichier.txt
-2. Afficher les 10 dernières lignes d'un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-tail -n 10 fichier.txt
-3. Compter le nombre de mots dans un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-wc -w fichier.txt
-4. Rechercher un motif dans un fichier
-bash
-Copier
-Modifier
-#!/bin/bash
-grep "motif" fichier.txt
-Règles Générales
-Scripts à 2 lignes : Chaque script doit être exactement de 2 lignes (vous pouvez utiliser une commande sur la première ligne et une autre sur la deuxième).
-Fin des scripts avec une nouvelle ligne : Assurez-vous que chaque fichier se termine par une nouvelle ligne (cela est requis par le standard).
-Pas de backticks, &&, || ou ; : Ces éléments ne sont pas autorisés dans les scripts.
-Pas d'utilisation de sed ou awk : Ces outils ne sont pas autorisés dans ce projet.
-Tests
-Les scripts seront testés sur Ubuntu 20.04 LTS, en vérifiant leur fonctionnalité par rapport aux exigences. Vous devrez utiliser les commandes de manière créative pour remplir les objectifs sans dépasser la limite de deux lignes de code.
+Note: You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `sed` and `awk` yet.
